@@ -1,4 +1,4 @@
-Python_CodingBat
+## Python-CodingBat.com
 
-This contains solutions to the programming problems that are found in codingbat.com in Python section
+This is a collection of solutions for puzzles found in www.codingbat.com
 
