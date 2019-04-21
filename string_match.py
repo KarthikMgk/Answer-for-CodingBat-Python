@@ -5,8 +5,22 @@ Given 2 strings, a and b, return the number of the positions where they contain 
 string_match('xxcaazz', 'xxbaaz') → 3
 string_match('abc', 'abc') → 2
 string_match('abc', 'axc') → 0
-------------------------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------------------------
+def string_match(a, b):
+  count = 0
+  string_a = list(a)
+  string_b = list(b)
+  
+  try:
+    for i in range(len(string_a)):
+      if (string_a[i] == string_b[i]) & (string_a[i+1] == string_b[i+1]):
+        count +=1
+  except:
+    pass
+  
+  return count
+------------------------------------------------------------------------------------------------------------------------------------------
 def string_match(a, b):
   count = 0
   string_a = list(a)
@@ -26,5 +40,5 @@ def string_match(a, b):
     pass
   
   return count
-    
+  
     
